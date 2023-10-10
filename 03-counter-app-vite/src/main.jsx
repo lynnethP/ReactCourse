@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// import {HelloApp} from './HelloApp'
+import {FirstApp} from './FirstApp'
+import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        {/* <HelloApp /> */}
+        <FirstApp title='Hola, mundo!' subTitle={12345} />
+    </React.StrictMode>
 )
